@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+import { fetch } from "node-fetch";
 
 exports.handler = async function (event, context) {
   const path = event.queryStringParameters.path || "index.html"; // Default to 'index.html' if no path is specified
